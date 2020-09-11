@@ -64,7 +64,7 @@ class Tree:
 
 if __name__ == "__main__":
 
-    with open('example.txt') as f:
+    with open('data/example.txt') as f:
         lines = [int(line) for line in f]
 
     num_elements = lines[0]
@@ -75,8 +75,6 @@ if __name__ == "__main__":
         root = my_tree.insert(root, element)
 
 
-    print(my_tree.levelOrder(root))
-    root = my_tree.removeDuplicates(root)
     print(my_tree.levelOrder(root))
 
 
